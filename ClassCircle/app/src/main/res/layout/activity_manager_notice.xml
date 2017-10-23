@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jia.classcircle.activity.activity.ManagerNoticeActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_notice"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        app:title="发布通知"
+        app:titleTextColor="#ffffff"
+        android:background="#3399FF"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/AppToolbarPopupTheme"
+        />
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_margin="5dp"
+            android:textSize="18dp"
+            android:text="编辑通知的信息:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_margin="5dp"
+            android:id="@+id/edt_notice_str"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_margin="5dp"
+            android:textSize="18dp"
+            android:text="发布的文件路径:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:layout_margin="10dp"
+            android:id="@+id/tv_data_url"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_notice"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:layout_margin="5dp"
+            android:src="@drawable/publish_msg"
+            android:layout_gravity="center_vertical"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <ImageView
+            android:id="@+id/img_file_url"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:layout_margin="5dp"
+            android:src="@drawable/get_file_url"
+            android:layout_gravity="center_vertical"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+</LinearLayout>
